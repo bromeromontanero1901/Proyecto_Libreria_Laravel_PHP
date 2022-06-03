@@ -1,0 +1,33 @@
+-HERRAMIENTAS
+1.- XAMPP
+2.- Composer
+3.- Visual Studio Code
+4.- Node JS
+
+-BASE DE DATOS
+Al ejecutar la herramienta XAMPP, habilitar el Servidor Apache y la herramienta de base de datos MySql.
+Presionar en el botón <Admin>, el cual llevará al entorno web de MySql.
+Crear una nueva base de datos (en mi caso le llamé libreria) con cualquier arquitectura, para este proyecto he utilizado la utf8_spanish_ci.
+
+-COMPOSER
+Se debe haber instalado previamente la herramienta Composer para poder generar instrucciones mediante comando y agilitar el paso de creación de estructura. Es de
+ vital importancia para la instalación de Laravel.
+
+
+-Node JS
+Se debe haber instalado previamente la herramienta Node JS para que ciertas palabras reservadas y componentes sean reconocidos por Laravel.
+
+-Visual Studio Code
+Al utilizar XAMPP, se debe ubicar el proyecto en la carpeta htdocs. Desde ese punto se debe abrir el proyecto.
+
+Una vez abierto el proyecto, modificamos el archivo .env la información de la conexión a la base de datos y abrimos la terminal del VSC y ejecutamos lo siguiente:
+
+	php artisan migrate
+
+Ésta acción servirá para crear la estructura completa de la base de datos.
+Luego, ejecutamos lo siguiente:
+
+	php artisan serve
+
+Ésta acción levantará el servidor exclusivo de Laravel, y nos ubicamos desde cualquier navegador a la dirección que se presenta al ejecutar el servidor.
+Para poder interactuar, se debe crear un usuario del motor Laravel para acceder al proyecto realizado.
